@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyCEjqfLOst278k50lsJbwZ2n1dp07iHzeU",
+          authDomain: "todo-app-c5117.firebaseapp.com",
+          projectId: "todo-app-c5117",
+          storageBucket: "todo-app-c5117.appspot.com",
+          messagingSenderId: "200452421974",
+          appId: "1:200452421974:web:c3a332557897f05d9f7ef7"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
+
+
+    <link rel="stylesheet" href="style.css">
+    <link href="css/all.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <div class="heading">
+        <h1>ToDo App</h1>
+    </div>
+    <div class="container">
+        <div class="input">
+            <input class="inp" type="text" placeholder="Enter your tasks" id="todo-item">
+            <button class="btn" onclick="addtodo()"><i class="fas fa-plus"></i></button>
+            <button class="btn" onclick="deleteall()"><i class="fas fa-trash"></i></button>
+        </div>
+        <div class="list-heading"><span><i class="far fa-sticky-note"></i></span> ToDo List</div>
+        <div class="todo-list">
+
+             <ul id="list">
+
+            </ul>
+        </div>
+    </div>
+
+
+
+
+   
+    <script src="app.js"></script>
+</body>
+
+</html>
